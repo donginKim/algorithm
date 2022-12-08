@@ -4,8 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Q. ¼­¿ïÀÇ ¿À´Ã ³¯Â¥¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥ ÀÛ¼º
- *    -> ¼­¿ïÀÇ ¿À´Ã ³¯Â¥¸¦ "YYYY-MM-DD" Çü½ÄÀ¸·Î Ãâ·ÂÇÑ´Ù.
+ * Q. ì„œìš¸ì˜ ì˜¤ëŠ˜ ë‚ ì§œë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨ ìž‘ì„±
+ *    -> ì„œìš¸ì˜ ì˜¤ëŠ˜ ë‚ ì§œë¥¼ "YYYY-MM-DD" í˜•ì‹ìœ¼ë¡œ ì¶œë ¥í•œë‹¤.
  *
  * Example. 2015-01-24
  */
