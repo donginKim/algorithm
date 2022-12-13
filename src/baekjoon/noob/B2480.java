@@ -39,5 +39,55 @@ public class B2480 {
         int b = Integer.parseInt(stringTokenizer.nextToken());
         int c = Integer.parseInt(stringTokenizer.nextToken());
 
+        if ( a!=b && b!=c && a!=c ) {
+            int max = Math.max(a, Math.max(c, b));
+            System.out.println(max * 100);
+        } else if ( a == b && b == c ) {
+            System.out.println(10000 + a * 1000);
+        } else if ( a == b || a == c ) {
+            System.out.println(1000 + a * 100);
+        } else {
+            System.out.println(1000 + b * 100);
+        }
+
     }
 }
+
+/**
+ * 다른 사람의 답
+ *
+ * import java.util.*;
+ *
+ * public class Main {
+ *     public static void main(String[] args){
+ *         Scanner sc = new Scanner(System.in);
+ *         TreeSet<Integer> nSet = new TreeSet();
+ *         int result=0;
+ *         int addPoint=0;
+ *         int multiPoint=0;
+ *         int dupNumber=0;
+ *         int tmp=0;
+ *
+ *         for(int i=0; i<3; i++){
+ *             tmp = sc.nextInt();
+ *             if(!nSet.add(Integer.valueOf(tmp))) {
+ *                 dupNumber = tmp;
+ *             }
+ *         }
+ *
+ *         if(nSet.size() == 1){
+ *             addPoint = 10000;
+ *             multiPoint = 1000;
+ *         } else if(nSet.size() == 2){
+ *             addPoint = 1000;
+ *             multiPoint = 100;
+ *         } else {
+ *             multiPoint = 100;
+ *             dupNumber = nSet.last().intValue();
+ *         }
+ *         result = addPoint + (multiPoint*dupNumber);
+ *
+ *         System.out.println(result);
+ *     }
+ * }
+ */
